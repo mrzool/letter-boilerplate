@@ -1,0 +1,84 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[$fontsize$, a4paper]{article}
+\usepackage{fontspec} 
+
+% LAYOUT
+%--------------------------------
+\usepackage{geometry} 
+\geometry{$geometry$}
+
+% No page numbers
+\pagenumbering{gobble}
+% Left align
+\usepackage[document]{ragged2e}
+
+
+% LANGUAGE
+%--------------------------------
+$if(lang)$
+\usepackage{polyglossia}
+\setmainlanguage{$lang$}
+$endif$
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
+% \setmonofont[Scale=0.8]{$monofont$}
+% \setsansfont[Scale=0.9]{$sansfont$}
+
+\setlength{\parskip}{1em}
+
+% Custom ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{$mainfont$}\selectfont\itshape\&}}
+
+$if(mainfont)$
+    \setmainfont{$mainfont$}
+$endif$
+$if(sansfont)$
+    \setsansfont{$sansfont$}
+$endif$
+
+% PDF SETUP
+%--------------------------------
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={$name$'s Vita},pdfauthor={$name$}]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+
+% DOCUMENT
+%--------------------------------
+\begin{document}
+\small
+\textsc{$author$} \textbullet{} \textsc{$address.street$} \textbullet{} \textsc{$address.zipcity$}
+
+\vspace{1em}
+
+\normalsize \sffamily
+$recipientaddress.name$\\
+$recipientaddress.street$\\
+$recipientaddress.zipcity$\\
+$recipientaddress.state$
+
+\vspace{3em}
+
+\rmfamily
+\begin{flushright}
+$city$, \today
+\end{flushright}
+
+\vspace{1em}
+
+$body$
+
+\begin{FlushRight}
+  \includegraphics[height=5.5\baselineskip]{includes/signature.pdf} \par
+  $author$
+\end{FlushRight}
+
+\end{document}

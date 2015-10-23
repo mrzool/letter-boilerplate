@@ -1,0 +1,21 @@
+---
+# Personal details
+author: Mattia Tezzele
+city: Berlin
+address:
+  street: Hertha Straße 5
+  zipcity: 13189 Berlin
+recipientaddress:
+  name: BASICS09
+  street: Leipziger Straße 65
+  zipcity: 10117 Berlin
+  state: Deutschland
+
+# Settings
+mainfont: Adobe Garamond Pro
+sansfont: Source Sans Pro
+lang: german
+fontsize: 10pt
+geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+
+---
