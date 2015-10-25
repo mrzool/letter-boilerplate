@@ -33,7 +33,7 @@ Refer to [pandoc's documentation](http://pandoc.org/demo/example9/templates.html
 - **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation, among other things.
 - **`geometry`**: A string that sets the margins through `geometry`. Read [this](https://www.sharelatex.com/learn/Page_size_and_margins) to learn how this package works.
 
-## Recommended reading
+## Recommended readings
 
 - [The Beauty of LaTeX](http://nitens.org/taraborelli/latex) by Dario Taraborelli
 - [Letterhead advices](http://practicaltypography.com/letterhead.html) from Butterick's Practical Typography 
