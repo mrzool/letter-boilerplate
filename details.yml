@@ -12,7 +12,7 @@ to:
 
 # Settings
 mainfont: Hoefler Text
-sansfont: Helvetica
+sansfont: Helvetica Neue
 lang: english
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
