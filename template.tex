@@ -68,15 +68,17 @@ $endif$
 %--------------------------------
 \begin{document}
 \small
-\textsc{$author$} \textbullet{} \textsc{$address.street$} \textbullet{} \textsc{$address.zipcity$}
+\textsc{$author$}
+$for(from)$
+\textbullet{} \textsc{$from$}
+$endfor$
 
 \vspace{1em}
 
 \normalsize \sffamily
-$recipientaddress.name$\\
-$recipientaddress.street$\\
-$recipientaddress.zipcity$\\
-$recipientaddress.state$
+$for(to)$
+$to$\\
+$endfor$
 
 \vspace{3em}
 
