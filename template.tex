@@ -48,6 +48,10 @@ $if(sansfont)$
     \setsansfont{$sansfont$}
 $endif$
 
+% Command required by how Pandoc handles the list conversion
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 % PDF SETUP
 %--------------------------------
 \usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={$name$'s Vita},pdfauthor={$name$}]{hyperref}  
