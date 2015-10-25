@@ -1,6 +1,8 @@
 # Letter Boilerplate
 
-A boilerplate to quickly and painlessly generate typographically perfect letters using LaTeX. The perfect companion to [cv-boilerplate](https://github.com/mrzool/cv-boilerplate).
+A boilerplate to quickly and painlessly generate high-quality letters through LaTeX. The perfect companion to [cv-boilerplate](https://github.com/mrzool/cv-boilerplate).
+
+Why settle for MS Word when you can get the job done using your text editor?
 
 ![preview](preview.jpg)
 
