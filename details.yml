@@ -1,20 +1,19 @@
 ---
-# Personal details
-author: Mattia Tezzele
-city: Berlin
-address:
-  street: Hertha Straße 5
-  zipcity: 13189 Berlin
-recipientaddress:
-  name: BASICS09
-  street: Leipziger Straße 65
-  zipcity: 10117 Berlin
-  state: Deutschland
+author: F. Nietzsche
+city: Naumburg
+from:
+- Artillerieregiment, 8. Batt.
+- Nordstraße 15, Naumburg
+to:
+- Carl Freiherr von Gersdorff
+- Stresow-Kaserne I
+- Grenadierstraße 13–16
+- 13597 Spandau
 
 # Settings
-mainfont: Adobe Garamond Pro
-sansfont: Source Sans Pro
-lang: german
+mainfont: Hoefler Text
+sansfont: Helvetica
+lang: english
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
 
