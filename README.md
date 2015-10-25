@@ -37,6 +37,8 @@ Refer to [pandoc's documentation](http://pandoc.org/demo/example9/templates.html
 
 - [The Beauty of LaTeX](http://nitens.org/taraborelli/latex) by Dario Taraborelli
 - [Letterhead advices](http://practicaltypography.com/letterhead.html) from Butterick's Practical Typography 
+- [Why Microsoft Word must Die](http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html) by Charlie Stross
+- [Sustainable Authorship in Plain Text using Pandoc and Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) by Dennis Tenen and Grant Wythoff
 
 ## License
 
