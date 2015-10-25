@@ -32,7 +32,7 @@ Refer to [pandoc's documentation](http://pandoc.org/demo/example9/templates.html
 - **`mainfont`**: Hoefler Text is the default, but every font installed on your system should work out of the box (thanks, XeTeX!)
 - **`sansfont`**: Used to render the recipient address so that it stands out from the rest of the letter.
 - **`fontsize`**: Possible values here are 10pt, 11pt and 12pt.
-- **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation, among other things.
+- **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation and date format.
 - **`geometry`**: A string that sets the margins through `geometry`. Read [this](https://www.sharelatex.com/learn/Page_size_and_margins) to learn how this package works.
 
 ## Recommended readings
