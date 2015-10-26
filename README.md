@@ -44,7 +44,7 @@ Refer to [pandoc's documentation](http://pandoc.org/demo/example9/templates.html
 
 ## See also
 
-- [cv-boilerplate](https://github.com/mrzool/cv-boilerplate) -- Easing the process of building and maintaining a CV using LaTeX
+- [cv-boilerplate](https://github.com/mrzool/cv-boilerplate) — Easing the process of building and maintaining a CV using LaTeX
 
 ## License
 
