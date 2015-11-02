@@ -1,6 +1,6 @@
 # Letter Boilerplate
 
-A boilerplate to quickly and painlessly generate high-quality letters through LaTeX. The perfect companion to [cv-boilerplate](https://github.com/mrzool/cv-boilerplate).
+A boilerplate to quickly and painlessly generate high-quality letters through LaTeX.
 
 Why settle for MS Word when you can get the job done using your text editor?
 
@@ -44,6 +44,7 @@ Refer to [pandoc's documentation](http://pandoc.org/demo/example9/templates.html
 
 ## See also
 
+- [invoice-boilerplate](https://github.com/mrzool/invoice-boilerplate) — Simple automated LaTeX invoicing system
 - [cv-boilerplate](https://github.com/mrzool/cv-boilerplate) — Easing the process of building and maintaining a CV using LaTeX
 
 ## License
