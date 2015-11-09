@@ -17,6 +17,6 @@ sansfont: Helvetica Neue
 monofont: Courier
 lang: english
 fontsize: 10pt
-geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+geometry: a4paper, left=35mm, right=35mm, top=50mm, bottom=25mm
 
 ---
