@@ -19,6 +19,12 @@
 \usepackage{enumitem}
 \setlist{nolistsep}
 
+$if(letterhead)$
+\usepackage{wallpaper}
+% \ThisULCornerWallPaper{1}{letterhead-front.pdf} % Uncomment to include a different letterhead on the first page
+\ULCornerWallPaper{1}{letterhead.pdf}
+$endif$
+
 % LANGUAGE
 %--------------------------------
 $if(lang)$
@@ -30,6 +36,7 @@ $endif$
 %--------------------------------
 \usepackage{xunicode}
 \usepackage{xltxtra}
+\usepackage[protrusion=true,final]{microtype}
 
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
@@ -56,8 +63,19 @@ $endif$
 
 % PDF SETUP
 %--------------------------------
-\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdfauthor={$name$}]{hyperref}
-\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+\usepackage[xetex, bookmarks, colorlinks, breaklinks]{hyperref}
+\hypersetup
+{
+  pdfauthor={$author$},
+  pdfsubject={$subject$},
+  pdftitle={$subject$},
+  colorlinks,breaklinks,
+  filecolor=black,
+  urlcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  linkcolor=[rgb]{0.117,0.682,0.858},
+  citecolor=[rgb]{0.117,0.682,0.858}
+}
 
 % To display custom date in the example
 % \usepackage[nodayofweek]{datetime}
@@ -70,7 +88,7 @@ $endif$
 %--------------------------------
 \begin{document}
 \small
-\textsc{$author$}
+\textsc{\textbf{$author$}}
 $for(from)$
 \textbullet{} \textsc{$from$}
 $endfor$
