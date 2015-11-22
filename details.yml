@@ -13,7 +13,7 @@ to:
 
 # Settings
 mainfont: Hoefler Text
-sansfont: Helvetica Neue
+altfont: Helvetica Neue
 monofont: Courier
 lang: english
 fontsize: 10pt
