@@ -19,7 +19,7 @@ To install pandoc on Mac OS X, run `brew install pandoc`. To install it on Linux
 
 1. Run this in your terminal to clone the repo, move into the right directory and delete all the git stuff:
 
-        git clone git@github.com:mrzool/letter-boilerplate.git && cd letter-boilerplate && rm -rf .git
+        git clone https://github.com/mrzool/letter-boilerplate.git && cd letter-boilerplate && rm -rf .git
 
 2. Edit `details.yml` with your details, your recipient's details, and the desired settings.
 3. Open `letter.md` and write your letter in markdown.
