@@ -17,12 +17,8 @@ To install pandoc on Mac OS X, run `brew install pandoc`. To install it on Linux
 
 ## Getting started
 
-1. Run this in your terminal to clone the repo, move into the right directory and delete all the git stuff:
-
-        git clone https://github.com/mrzool/letter-boilerplate.git && cd letter-boilerplate && rm -rf .git
-
-2. Edit `details.yml` with your details, your recipient's details, and the desired settings.
-3. Open `letter.md` and write your letter in markdown.
+1. Edit `details.yml` with your details, your recipient's details, and the desired settings.
+2. Open `letter.md` and write your letter in markdown.
 3. Run `make` to compile the PDF.
 
 The template automatically includes `signature.pdf` after the letter's body as a final touch. Follow [this method](http://tex.stackexchange.com/a/32940/82423) to import your own signature.
