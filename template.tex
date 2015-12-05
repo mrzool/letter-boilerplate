@@ -117,9 +117,12 @@ $endif$
 
 $body$
 
-\begin{FlushRight}
-  \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
-  $author$
-\end{FlushRight}
+\IfFileExists{signature.pdf}
+{
+    \begin{FlushRight}
+      \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
+      $author$
+    \end{FlushRight}
+}
 
 \end{document}
