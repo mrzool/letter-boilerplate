@@ -2,11 +2,11 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[$fontsize$, a4paper]{article}
-\usepackage{fontspec} 
+\usepackage{fontspec}
 
 % LAYOUT
 %--------------------------------
-\usepackage{geometry} 
+\usepackage{geometry}
 \geometry{$geometry$}
 
 % No page numbers
@@ -117,9 +117,12 @@ $endif$
 
 $body$
 
-\begin{FlushRight}
-  \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
-  $author$
-\end{FlushRight}
+\IfFileExists{signature.pdf}
+{
+    \begin{FlushRight}
+      \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
+      $author$
+    \end{FlushRight}
+}
 
 \end{document}
