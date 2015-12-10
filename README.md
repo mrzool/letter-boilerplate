@@ -21,7 +21,7 @@ To install pandoc on Mac OS X, run `brew install pandoc`. To install it on Linux
 2. Open `letter.md` and write your letter in markdown.
 3. Run `make` to compile the PDF.
 
-The template automatically includes `signature.pdf` after the letter's body as a final touch. Follow [this method](http://tex.stackexchange.com/a/32940/82423) to import your own signature.
+If a file named `signature.pdf` is present in the directory, the boilerplate will automatically print it after the letter's body as a final touch. Follow [this method](http://tex.stackexchange.com/a/32940/82423) to import your own signature.
 
 **Note**: this template needs to be compiled with XeTeX.
 
