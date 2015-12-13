@@ -17,8 +17,8 @@ To install pandoc on Mac OS X, run `brew install pandoc`. To install it on Linux
 
 ## Getting started
 
-1. Edit `details.yml` with your details, your recipient's details, and the desired settings.
-2. Open `letter.md` and write your letter in markdown.
+1. Open `letter.md` and fill the YAML frontmatter with your details, your recipient's details, optional subject line, and the desired settings.
+2. Write your letter in markdown below.
 3. Run `make` to compile the PDF.
 
 If a file named `signature.pdf` is present in the directory, the boilerplate will automatically print it after the letter's body as a final touch. Follow [this method](http://tex.stackexchange.com/a/32940/82423) to import your own signature.
