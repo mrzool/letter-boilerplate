@@ -9,7 +9,7 @@ Why settle for MS Word when you can get the job done using your text editor?
 ## Dependencies
 
 1. LaTeX with the following extra packages: `fontspec` `geometry` `ragged2e` `enumitem` `xunicode` `xltxtra` `hyperref` `polyglossia` `footmisc`
-2. [Pandoc](http://pandoc.org/)
+2. [Pandoc](http://pandoc.org/), the universal document converter.
 
 To install LaTeX on Mac OS X, I recommend getting the smaller version BasicTeX from [here](https://tug.org/mactex/morepackages.html) and installing the additional packages with `tlmgr` afterwards. Same goes for Linux: install `texlive-base` with your package manager and add the needed additional packages later.
 
