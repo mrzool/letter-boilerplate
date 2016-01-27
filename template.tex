@@ -117,12 +117,15 @@ $endif$
 
 $body$
 
-\IfFileExists{signature.pdf}
-{
-    \begin{FlushRight}
-      \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
-      $author$
-    \end{FlushRight}
-}
+\begin{FlushRight}
+  \IfFileExists{signature.pdf}
+  {
+    \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
+  }
+  {
+    \vspace{5.5\baselineskip}
+  }
+  $author$
+\end{FlushRight}
 
 \end{document}
