@@ -78,11 +78,10 @@ $endif$
 }
 
 % To display custom date in the example
-% \usepackage[nodayofweek]{datetime}
-% \newdate{date}{01}{12}{1867}
-% \date{\displaydate{date}}
-% Use this instead of \today
-% \displaydate{date}
+$if(customdate)$
+\usepackage[$lang$]{datetime2}
+\DTMsavedate{customdate}{$customdate$}
+$endif$
 
 % DOCUMENT
 %--------------------------------
@@ -104,7 +103,7 @@ $endfor$
 
 \rmfamily
 \begin{flushright}
-  $city$, \today
+  $city$, $if(customdate)$\DTMusedate{customdate}$else$\today$endif$
 \end{flushright}
 
 \vspace{1em}

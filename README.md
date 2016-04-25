@@ -8,7 +8,7 @@ Why settle for MS Word when you can get the job done using your text editor?
 
 ## Dependencies
 
-1. LaTeX with the following extra packages: `fontspec` `geometry` `ragged2e` `enumitem` `xunicode` `xltxtra` `hyperref` `polyglossia` `footmisc`
+1. LaTeX with the following extra packages: `fontspec` `geometry` `ragged2e` `enumitem` `xunicode` `xltxtra` `hyperref` `polyglossia` `footmisc` (also, `datetime2` plus its language modules if you want to use a custom date, see below in the settings section)
 2. [Pandoc](http://pandoc.org/), the universal document converter.
 
 To install LaTeX on Mac OS X, I recommend getting the smaller version BasicTeX from [here](https://tug.org/mactex/morepackages.html) and installing the additional packages with `tlmgr` afterwards. Same goes for Linux: install `texlive-base` with your package manager and add the needed additional packages later.
@@ -40,6 +40,7 @@ Although I didn't test it, you can probably use this on Windows, too. Both [Pand
 - **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation and date format.
 - **`geometry`**: A string that sets the margins through `geometry`. Read [this](https://www.sharelatex.com/learn/Page_size_and_margins) to learn how this package works.
 - **`letterhead`**: include custom letterhead in the PDF (see below).
+- **`customdate`**: Allows you to specify a custom date in the format YYYY-MM-DD in case you need to pre/postdate your letter. *Caveat*: Requires `datetime2` along with its language module (ex: if `lang` is set to `german` do `tlmgr install datetime2 datetime2-german`)
 
 ## Custom letterhead
 
