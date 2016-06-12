@@ -1,25 +1,12 @@
 ---
-# subject: My life as a soldier
-author: F. Nietzsche
-city: Naumburg
-from:
-- Artillerieregiment, 8. Batt.
-- Nordstraße 15, Naumburg
+subject: My life as a soldier
+customdate: 1867-12-01
+
 to:
 - Carl Freiherr von Gersdorff
 - Stresow-Kaserne I
 - Grenadierstraße 13–16
 - 13597 Spandau
-
-# Settings
-mainfont: Hoefler Text
-altfont: Helvetica Neue
-monofont: Courier
-lang: english
-fontsize: 10pt
-geometry: a4paper, left=35mm, right=35mm, top=50mm, bottom=25mm
-# letterhead: true
-# customdate: YYYY-MM-DD
 ---
 
 Dear Friend,
