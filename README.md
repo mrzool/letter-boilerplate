@@ -8,7 +8,7 @@ Why settle for MS Word when you can get the job done using your text editor?
 
 ## Dependencies
 
-1. LaTeX with the following extra packages: `fontspec` `geometry` `ragged2e` `enumitem` `xunicode` `xltxtra` `hyperref` `polyglossia` `footmisc` (also, `datetime2` plus its language modules if you want to use a custom date, see below in the settings section)
+1. LaTeX with the following extra packages: `fontspec` `geometry` `ragged2e` `enumitem` `xunicode` `xltxtra` `hyperref` `polyglossia` `footmisc` `graphicx` (also, `datetime2` plus its language modules if you want to use a custom date, see below in the settings section)
 2. [Pandoc](http://pandoc.org/), the universal document converter.
 
 To install LaTeX on Mac OS X, I recommend getting the smaller version BasicTeX from [here](https://tug.org/mactex/morepackages.html) and installing the additional packages with `tlmgr` afterwards. Same goes for Linux: install `texlive-base` with your package manager and add the needed additional packages later.
@@ -21,7 +21,7 @@ To install pandoc on Mac OS X, run `brew install pandoc`. To install it on Linux
 2. Write your letter in markdown below.
 3. Run `make` to compile the PDF.
 
-If a file named `signature.pdf` is present in the directory, the boilerplate will automatically print it after the letter's body as a final touch. Follow [this method](http://tex.stackexchange.com/a/32940/82423) to import your own signature.
+If the signature option points to a valid file (including the extension)  in the directory, the boilerplate will automatically print it after the letter's body as a final touch. Follow [this method](http://tex.stackexchange.com/a/32940/82423) to import your own signature.
 
 **Note**: this template needs to be compiled with XeTeX.
 

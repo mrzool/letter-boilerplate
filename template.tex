@@ -32,6 +32,10 @@ $if(lang)$
 \setmainlanguage{$lang$}
 $endif$
 
+% IMAGES
+%--------------------------------
+\usepackage{graphicx}
+
 % TYPOGRAPHY
 %--------------------------------
 \usepackage{xunicode}
@@ -117,19 +121,15 @@ $endif$
 $body$
 
 \begin{FlushRight}
-
-  \IfFileExists{signature.pdf}
-  {
-    \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
-  }
-  {
-    \vspace{5.5\baselineskip}
-  }
+  $if(signature)$
+  \includegraphics[height=5.5\baselineskip]{$signature$} \par
+  $else$
+  \vspace{5.5\baselineskip}
+  $endif$
 
   $for(author)$
   $author$\\
   $endfor$
-
 \end{FlushRight}
 
 \end{document}

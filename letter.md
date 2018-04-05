@@ -20,6 +20,7 @@ monofont: Courier
 lang: english
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=50mm, bottom=25mm
+signature: signature.pdf
 # letterhead: true
 # customdate: YYYY-MM-DD
 ---
