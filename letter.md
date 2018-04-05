@@ -1,6 +1,8 @@
 ---
 # subject: My life as a soldier
-author: F. Nietzsche
+author:
+- F. Nietzsche
+- RA16 989 587
 city: Naumburg
 from:
 - Artillerieregiment, 8. Batt.
