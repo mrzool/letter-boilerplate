@@ -31,7 +31,6 @@ $if(letterheadAlt)$
 \ThisULCornerWallPaper{1}{$letterheadAlt$}
 $endif$
 
-
 % LANGUAGE
 %--------------------------------
 $if(lang)$
@@ -42,6 +41,12 @@ $endif$
 % IMAGES
 %--------------------------------
 \usepackage{graphicx}
+
+% MATH
+%--------------------------------
+$if(math)$
+\usepackage{mathtools}
+$endif$
 
 % TYPOGRAPHY
 %--------------------------------
