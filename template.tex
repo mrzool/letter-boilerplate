@@ -19,11 +19,18 @@
 \usepackage{enumitem}
 \setlist{nolistsep}
 
+% Include a standard letterhead
 $if(letterhead)$
 \usepackage{wallpaper}
-% \ThisULCornerWallPaper{1}{letterhead-front.pdf} % Uncomment to include a different letterhead on the first page
-\ULCornerWallPaper{1}{letterhead.pdf}
+\ULCornerWallPaper{1}{$letterhead$}
 $endif$
+
+% Includes a different letterhead on the first page
+$if(letterheadAlt)$
+\usepackage{wallpaper}
+\ThisULCornerWallPaper{1}{$letterheadAlt$}
+$endif$
+
 
 % LANGUAGE
 %--------------------------------
