@@ -117,6 +117,7 @@ $endif$
 $body$
 
 \begin{FlushRight}
+
   \IfFileExists{signature.pdf}
   {
     \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
@@ -124,7 +125,11 @@ $body$
   {
     \vspace{5.5\baselineskip}
   }
-  $author$
+
+  $for(author)$
+  $author$\\
+  $endfor$
+
 \end{FlushRight}
 
 \end{document}
