@@ -40,6 +40,9 @@ Although I didn't test it, you can probably use this on Windows, too. Both [Pand
 - **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation and date format.
 - **`geometry`**: A string that sets the margins through `geometry`. Read [this](https://www.sharelatex.com/learn/Page_size_and_margins) to learn how this package works.
 - **`letterhead`**: include custom letterhead in the PDF (see below).
+- **`letterheadAlt`**: include alternative custom letterhead in the PDF (see below).
+- **`math`**: include math equations and formatting. Read [this](https://ctan.org/pkg/mathtools?lang=en) for the docs and [this](https://www.sharelatex.com/learn/Mathematical_expressions) for a gentle introduction to TeX math.
+- **`signature`**: include a signature (see below).
 - **`customdate`**: Allows you to specify a custom date in the format YYYY-MM-DD in case you need to pre/postdate your letter. *Caveat*: Requires `datetime2` along with its language module (ex: if `lang` is set to `german` do `tlmgr install datetime2 datetime2-german`)
 
 ## Custom letterhead
