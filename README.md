@@ -8,7 +8,7 @@ Why settle for MS Word when you can get the job done using your text editor?
 
 ## Dependencies
 
-1. LaTeX with the following extra packages: `fontspec` `geometry` `ragged2e` `enumitem` `xunicode` `xltxtra` `hyperref` `polyglossia` `footmisc` (also, `datetime2` plus its language modules if you want to use a custom date, see below in the settings section)
+1. LaTeX with the following extra packages: `fontspec` `geometry` `ragged2e` `enumitem` `xunicode` `xltxtra` `hyperref` `polyglossia` `footmisc` `graphicx` (also, `datetime2` plus its language modules if you want to use a custom date, and `mathtools` if you need equations; see below in the settings section)
 2. [Pandoc](http://pandoc.org/), the universal document converter.
 
 To install LaTeX on Mac OS X, I recommend getting the smaller version BasicTeX from [here](https://tug.org/mactex/morepackages.html) and installing the additional packages with `tlmgr` afterwards. Same goes for Linux: install `texlive-base` with your package manager and add the needed additional packages later.
@@ -21,7 +21,7 @@ To install pandoc on Mac OS X, run `brew install pandoc`. To install it on Linux
 2. Write your letter in markdown below.
 3. Run `make` to compile the PDF.
 
-If a file named `signature.pdf` is present in the directory, the boilerplate will automatically print it after the letter's body as a final touch. Follow [this method](http://tex.stackexchange.com/a/32940/82423) to import your own signature.
+If the signature option points to a valid file (including the extension)  in the directory, the boilerplate will automatically print it after the letter's body as a final touch. Follow [this method](http://tex.stackexchange.com/a/32940/82423) to import your own signature.
 
 **Note**: this template needs to be compiled with XeTeX.
 
@@ -40,11 +40,14 @@ Although I didn't test it, you can probably use this on Windows, too. Both [Pand
 - **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation and date format.
 - **`geometry`**: A string that sets the margins through `geometry`. Read [this](https://www.sharelatex.com/learn/Page_size_and_margins) to learn how this package works.
 - **`letterhead`**: include custom letterhead in the PDF (see below).
+- **`letterheadAlt`**: include alternative custom letterhead in the PDF (see below).
+- **`math`**: include math equations and formatting. Read [this](https://ctan.org/pkg/mathtools?lang=en) for the docs and [this](https://www.sharelatex.com/learn/Mathematical_expressions) for a gentle introduction to TeX math.
+- **`signature`**: include a signature (see below).
 - **`customdate`**: Allows you to specify a custom date in the format YYYY-MM-DD in case you need to pre/postdate your letter. *Caveat*: Requires `datetime2` along with its language module (ex: if `lang` is set to `german` do `tlmgr install datetime2 datetime2-german`)
 
 ## Custom letterhead
 
-If you have already designed your own letterhead and want to use it with this template, including it should be easy enough. Set the `letterhead` option to `true` to activate the `wallpaper` package in the template. `wallpaper` will look for a file named `letterhead.pdf` in the project root folder and print it on the PDF before compiling the document. Change the fonts to match the ones in your letterhead, adjust the margins with `geometry` and you should be all set.
+If you have already designed your own letterhead and want to use it with this template, including it should be easy enough. Set the `letterhead` option to the file name (include .pdf) to activate the `wallpaper` package in the template. `wallpaper` will look for the named file in the project root folder and print it on the PDF before compiling the document. Change the fonts to match the ones in your letterhead, adjust the margins with `geometry` and you should be all set.
 
 ## Recommended readings
 

@@ -19,10 +19,16 @@
 \usepackage{enumitem}
 \setlist{nolistsep}
 
+% Include a standard letterhead
 $if(letterhead)$
 \usepackage{wallpaper}
-% \ThisULCornerWallPaper{1}{letterhead-front.pdf} % Uncomment to include a different letterhead on the first page
-\ULCornerWallPaper{1}{letterhead.pdf}
+\ULCornerWallPaper{1}{$letterhead$}
+$endif$
+
+% Includes a different letterhead on the first page
+$if(letterheadAlt)$
+\usepackage{wallpaper}
+\ThisULCornerWallPaper{1}{$letterheadAlt$}
 $endif$
 
 % LANGUAGE
@@ -30,6 +36,16 @@ $endif$
 $if(lang)$
 \usepackage{polyglossia}
 \setmainlanguage{$lang$}
+$endif$
+
+% IMAGES
+%--------------------------------
+\usepackage{graphicx}
+
+% MATH
+%--------------------------------
+$if(math)$
+\usepackage{mathtools}
 $endif$
 
 % TYPOGRAPHY
@@ -117,14 +133,15 @@ $endif$
 $body$
 
 \begin{FlushRight}
-  \IfFileExists{signature.pdf}
-  {
-    \includegraphics[height=5.5\baselineskip]{signature.pdf} \par
-  }
-  {
-    \vspace{5.5\baselineskip}
-  }
-  $author$
+  $if(signature)$
+  \includegraphics[height=5.5\baselineskip]{$signature$} \par
+  $else$
+  \vspace{5.5\baselineskip}
+  $endif$
+
+  $for(author)$
+  $author$\\
+  $endfor$
 \end{FlushRight}
 
 \end{document}
