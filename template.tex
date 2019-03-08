@@ -40,9 +40,15 @@ $endif$
 
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
+$if(mainfont)$
 \setromanfont [Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
+$endif$
+$if(altfont)$
 \setsansfont[Scale=0.9]{$altfont$}
+$endif$
+$if(monofont)$
 \setmonofont[Scale=0.8]{$monofont$}
+$endif$
 
 % Set paragraph break
 \setlength{\parskip}{1em}
@@ -94,7 +100,11 @@ $endfor$
 
 \vspace{1em}
 
-\normalsize \sffamily
+\normalsize 
+
+$if(altfont)$
+\sffamily
+$endif$
 $for(to)$
 $to$\\
 $endfor$
@@ -114,7 +124,13 @@ $endif$
 
 \vspace{1em}
 
+$if(justify)$
+\begin{justify}
+$endif$
 $body$
+$if(justify)$
+\end{justify}
+$endif$
 
 \begin{FlushRight}
   \IfFileExists{signature.pdf}
