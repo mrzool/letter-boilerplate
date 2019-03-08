@@ -12,13 +12,25 @@ to:
 - 13597 Spandau
 
 # Settings
+
+# MacOS fonts
+
 mainfont: Hoefler Text
 altfont: Helvetica Neue
 monofont: Courier
+
+# When using Linux (Ubuntu), you can use these fallbacks:
+
+# mainfont: 'Bitstream Charter'
+# altfont: 'DejaVu Sans'
+# monofont: Courier
+
+
 lang: english
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=50mm, bottom=25mm
 # letterhead: true
+# justify: true
 # customdate: YYYY-MM-DD
 ---
 
