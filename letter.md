@@ -15,7 +15,7 @@ to:
 mainfont: Hoefler Text
 altfont: Helvetica Neue
 monofont: Courier
-lang: en-US
+lang: en-GB
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=50mm, bottom=25mm
 # letterhead: true
