@@ -32,7 +32,7 @@ Although I didn't test it, you can probably use this on Windows, too. Both [Pand
 ## Available settings
 
 - **`subject`**: The letter's subject (optional)
-- **`mainfont`**: Hoefler Text is the default, but every font installed on your system should work out of the box (thanks, XeTeX!)
+- **`mainfont`**: Hoefler Text is the default, but every font installed on your system should work out of the box thanks to XeTeX.
 - **`altfont`**: Used to render the recipient address so that it stands out from the rest of the letter.
 - **`fontsize`**: Possible values here are 10pt, 11pt and 12pt.
 - **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation and date format.
