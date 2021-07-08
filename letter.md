@@ -1,4 +1,8 @@
 ---
+output:
+  pdf_document:
+    template: template.tex
+    latex_engine: xelatex
 # subject: My life as a soldier
 author: F. Nietzsche
 city: Naumburg
