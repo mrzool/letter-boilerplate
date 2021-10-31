@@ -25,8 +25,8 @@ monofont: Courier
 # altfont: 'DejaVu Sans'
 # monofont: Courier
 
+lang: en-GB
 
-lang: english
 fontsize: 10pt
 geometry: a4paper, left=35mm, right=35mm, top=50mm, bottom=25mm
 # letterhead: true
